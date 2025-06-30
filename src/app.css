@@ -1,1 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
 @import 'tailwindcss';
+
+@theme {
+    --color-sage: #BABD8D;
+    --color-apricot: #FFDAC6;
+    --color-princeton-orange: #FA9500;
+    --color-persimmon: #EB6424;
+}
