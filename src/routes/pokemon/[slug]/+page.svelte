@@ -1,15 +1,15 @@
 <script lang="ts">
-	import type { PageProps } from "../../$types";
+    import type { PokemonPageProps } from "$lib/types/PokemonPageProps"
 
     export const ssr = true;
 
-    let {data}: PageProps = $props()
+    let {data}: PokemonPageProps = $props()
 </script>
 
 <div>
     <p>{data.name}</p>
     <p>{data.height}</p>
-    <img height={300} width={300} src={data.image} alt={data.title} />
+    <img height={300} width={300} src={data.image} alt={data.name} />
     <p>types:</p>
     <ul>
         {#each data.types as type}
