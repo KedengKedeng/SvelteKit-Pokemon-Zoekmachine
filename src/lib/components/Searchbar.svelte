@@ -23,6 +23,7 @@
 
     input {
         font-size: var(--font-size);
+        font-family: 'Jua', sans-serif;
     }
 </style>
 

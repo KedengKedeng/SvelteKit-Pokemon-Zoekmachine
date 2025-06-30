@@ -7,17 +7,7 @@
 	let { data }: PageProps = $props();
 </script>
 
-<div class="p-4">
-	<Searchbar
-		--height="30px"
-		--width="400px"
-		--font-size="14px"
-		onSubmit={(value) => {
-			window.location.href = `/pokemon/${value}`;
-		}}
-		placeholder="Enter another pokemon..."
-	/>
-
+<div class="p-4 bg-gray-100 w-full h-full">
 	<div class="flex h-full w-1/2 flex-row gap-2">
 		<div class="h-ful w-[30%] flex flex-col gap-2">
 			<div
