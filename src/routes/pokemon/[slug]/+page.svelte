@@ -1,12 +1,16 @@
 <script lang="ts">
-    import type { PokemonPageProps } from "$lib/types/PokemonPageProps"
+	import Searchbar from "$lib/components/Searchbar.svelte";
+	import type { PageProps } from "./$types";
 
     export const ssr = true;
 
-    let {data}: PokemonPageProps = $props()
+    let {data}: PageProps = $props()
 </script>
 
-<div>
+
+<div class="p-4">
+    <Searchbar --height="30px" --width="400px" onSubmit={(value) => {window.location.href = `/pokemon/${value}`}} placeholder="Enter another pokemon..." />
+
     <p>{data.name}</p>
     <p>{data.height}</p>
     <img height={300} width={300} src={data.image} alt={data.name} />
